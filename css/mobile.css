@@ -1,0 +1,81 @@
+nav {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 35vh;
+}
+
+nav ul{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+nav ul li{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+}
+
+nav ul li a{
+    display: block;
+}
+
+nav ul li a:active{
+    border-radius: 5%;
+    background-color: var(--primary-green);
+}
+
+#showcase h2{
+    font-size: 35px;
+}
+
+#showcase p {
+    font-size: 18px;
+}
+
+
+
+#what .container{
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+}
+#what > h2{
+    font-size: 30px;
+}
+
+#what .container .box{
+    flex-basis: 0;
+    margin: 20px;
+}
+
+#who .img-container{
+    display: none;
+}
+
+#clients .logo-container{
+    flex-direction: row;
+    width: 100%;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+#clients img {
+    width: 50px;
+    margin: 15px;
+}
+
+#contact {
+    flex-direction: column;
+}
+
+footer{
+    font-size: 15px;
+}
+
+#map{
+    width: 100%;
+}

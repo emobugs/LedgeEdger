@@ -1,0 +1,31 @@
+nav #logo{
+    font-size: 40px;
+}
+
+nav ul li a{
+    font-size: 30px;
+}
+
+#what {
+    min-height: 25vh;
+}
+
+
+#what .container .box {
+    flex-direction: row;
+    flex-basis: 400px;
+    flex-wrap: wrap;
+}
+
+
+#what .container .box h3{
+    margin: 10px;
+}
+
+#what .container .box i {
+    min-width: 100px;
+    height: 100px;
+    align-self: center;
+    margin: 20px;
+    padding-top: 30px;
+}

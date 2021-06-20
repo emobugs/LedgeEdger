@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@1,300&display=swap');
+:root{
+    --primary-black: #333;
+    --primary-green: #93cb52;
+    --section-h-font: 35px;
+}
+
+/* Resetting */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    position: relative;
+}
+
+/* Utilities */
+.primary-text{
+    color: var(--primary-green);
+}
+
+.btn{
+    font-size: 20px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+
+/* Main Styling */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-black);
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+nav #logo{
+    padding-left: 20px;
+}
+
+nav ul{
+    display: flex;
+    padding-right: 10px;
+}
+
+nav ul li{
+    padding: 8px;
+    list-style-type: none;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    height: 100%;
+    padding: 12px;
+    transition: all 0.1s;
+    cursor: pointer;
+}
+
+nav ul li a:hover{
+    border-radius: 5%;
+    background-color: var(--primary-green);
+}
+
+#showcase{
+    height: 100vh;
+    background-color: #333;
+    background: url('../img/showcase.jpg') rgba(0,0,0,0.4) no-repeat center center/cover;
+    background-blend-mode: overlay;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#showcase h2{
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+#showcase p{
+    font-size: 24px;
+}
+
+#showcase .btn{
+    margin-top: 30px;
+    background-color: var(--primary-green);
+}
+
+#what{
+    color:var(--primary-black);
+    min-height: 50vh;
+}
+
+#what > h2{
+    text-align: center;
+    margin: 40px;
+    font-size: var(--section-h-font);
+}
+
+#what .container{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#what .container .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 300px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+#what .container .box h3{
+    margin: 20px;
+}
+
+#what .container .box i{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    background-color: var(--primary-green);
+    padding-top: 20px;
+    margin: 0 auto;
+}
+
+#who{
+    display: flex;
+    flex-direction: row;
+}
+
+#who .img-container{
+    flex: 1;
+}
+
+#who .img-container img{
+    width: 100%;
+    height: 100%;
+}
+
+#who .content{
+    background-color: var(--primary-black);
+    flex: 1;
+    padding: 30px;
+}
+
+#who .content h2{
+    font-size: var(--section-h-font);
+}
+
+#who .content p{
+    margin-top: 15px;
+    line-height: 25px;
+}
+
+#who .content h3{
+    margin-top: 15px;
+}
+
+#who .content ul li{
+    margin-top: 20px;
+    list-style-type: none;
+}
+#clients{
+    padding-bottom: 20px;
+}
+
+#clients .logo-container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+#clients h2 {
+    color: var(--primary-black);
+    text-align: center;
+    margin-top: 20px;
+    font-size: 35px;
+}
+
+#clients img{
+    width: 150px;
+    margin: 35px;
+}
+
+#contact {
+    display: flex;
+    flex-direction: row;
+}
+
+#contact .contact-form{
+    background-color: var(--primary-green);
+    color: #fff;
+    flex: 1;
+    padding: 40px;
+}
+
+#contact .contact-form h3{
+    font-size: var(--section-h-font);
+}
+
+#contact .contact-form p{
+    margin-top:15px;
+}
+#contact .contact-form form{
+    width: 90%;
+    margin: 15px auto;
+}
+
+#contact .contact-form .form-control{
+    margin-top: 15px;
+    /* padding: 0 10px; */
+}
+
+#contact .contact-form .form-control input,
+#contact .contact-form .form-control textarea{
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+}
+
+#contact .contact-form form label{
+    display: block;
+}
+
+#contact button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    background-color: var(--primary-black);
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+#contact button:hover{
+    background-color: #7ac524;
+}
+
+#map{
+    flex: 2;
+    height: 600px;
+    width: 600px;
+}
+
+iframe {
+    height: 100%;
+    width: 100%;
+}
+
+footer{
+    background-color: var(--primary-black);
+    text-align: center;
+    padding: 30px;
+}
+
